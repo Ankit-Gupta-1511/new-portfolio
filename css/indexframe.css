@@ -225,9 +225,11 @@ div.imgContainer img
 
 div.skillContainer
 {
+    width:90%;
       margin-left:auto;
     margin-right:auto;
     text-align: center;
+    padding:0px;
 }
 div.cards
 {
@@ -235,8 +237,10 @@ div.cards
     border-radius: 5px;
     height:400px;
     width:300px;
-  
+  display:inline-block;
     margin-top:50px;
+    margin-left:2%;
+    margin-right:2%;
 }
 
 img.skillImages
@@ -430,8 +434,8 @@ div#socialMedia i
 div.cards
     {
         display:inline-block;
-        margin-left:5%;
-        margin-right:5%;
+        margin-left:2%;
+        margin-right:2%;
         margin-bottom:5%;
     }
     
@@ -440,6 +444,7 @@ div.skillContainer
         width:90%;
         margin-left:auto;
         margin-right:auto;
+        text-align:center;
     }
 }
 
