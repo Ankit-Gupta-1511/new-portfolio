@@ -355,12 +355,12 @@ div#contactDetails
     margin-top:20px;
     margin-bottom:20px;
 }
-div#detailContainer
+div.detailContainer
 {
-    margin:30px;
+    margin:0px;
     margin-left:auto;
     margin-right:auto;
-    padding:10px;
+    padding:0px;
     text-align: center;
     
     
@@ -371,7 +371,7 @@ div#detailContainer
     position:relative;
     font-size: 20px;
     top:-15px;
-    left:20px;
+    left:10px;
 }
 
 .glyphicon
@@ -492,6 +492,7 @@ div.alternateDesign div.imgContainer
     }
 }
 
+/************* phone screens **************/
 @media (max-width:420px)
 {
     div#introContents
