@@ -534,12 +534,19 @@ div#hireBtn
     
     .glyphicon
 {
-    font-size:30px;
+    font-size:25px;
    
 }
+    .detailContainer
+    {
+        border:1px solid black;
+    }
     .myDetails
 {
-    font-size: 16px;
+    font-size: 14px;
+    top:-5px;
+    margin-top:0px;
+   position:relative;
     
 }
 }
