@@ -18,11 +18,13 @@ $(document).ready(function(){
             headers: {
                 'Access-Control-Allow-Origin': 'https://ankit-gupta-1511.github.io'
             }
+          }).done(function(response){
+            responseContainer.textContent = response;
           });
 
-        $.post("https://chat-web-app-ankit.herokuapp.com/chat/get/response", data).done(function(response){
-            responseContainer.textContent = response;
-        });
+        // $.post("https://chat-web-app-ankit.herokuapp.com/chat/get/response", data).done(function(response){
+        //     responseContainer.textContent = response;
+        // });
 
      
     });
