@@ -83,15 +83,15 @@
         </div>
         
     </div>
-    <section class="skill-section container" id="skill-section">
+    <section class="skill-section container section" id="skill-section">
         <div class="heading">
             <h3 class="section-heading">
                 My Skills
             </h3>
         </div>
         <div class="skill-section">
-            <div class="row">
-                <div class="card col-md-3" style="width: 18rem;">
+            <div class="row justify-content-center">
+                <div class="card col-md-3 " style="width: 18rem;">
                     <img class="card-img-top skill-logo animated fadeInUp" src="images/html5.png" alt="Card image cap">
                     <div class="card-body  animated fadeInUp">
                         <h5 class="card-text">HTML</h5>
@@ -110,7 +110,7 @@
                     </div>
                 </div>
             </div>
-            <div class="row">
+            <div class="row justify-content-center">
                 <div class="card card-md-3" style="width: 18rem;">
                     <img class="card-img-top skill-logo animated fadeInUp" src="images/jquery.jpg" alt="Card image cap">
                     <div class="card-body  animated fadeInUp">
@@ -130,7 +130,7 @@
                     </div>
                 </div>
             </div>
-            <div class="row">
+            <div class="row justify-content-center">
                 <div class="card card-md-3" style="width: 18rem;">
                     <img class="card-img-top skill-logo animated fadeInUp" src="images/python.png" alt="Card image cap">
                     <div class="card-body  animated fadeInUp">
@@ -150,7 +150,7 @@
                     </div>
                 </div>
             </div>
-            <div class="row">
+            <div class="row justify-content-center">
                 <div class="card card-md-3" style="width: 18rem;">
                     <img class="card-img-top skill-logo animated fadeInUp" src="images/numpy.jpeg" alt="Card image cap">
                     <div class="card-body  animated fadeInUp">
@@ -170,7 +170,7 @@
                     </div>
                 </div>
             </div>
-            <div class="row">
+            <div class="row justify-content-center">
                 <div class="card card-md-3" style="width: 18rem;">
                     <img class="card-img-top skill-logo animated fadeInUp" src="images/scikit.png" alt="Card image cap">
                     <div class="card-body  animated fadeInUp">
@@ -194,7 +194,7 @@
     </section>
 
     <section class="work-section" id="work-section">
-        <div class="container">
+        <div class="container section">
             <div class="heading">
                 <h3 class="section-heading">
                     My Previous Work
@@ -203,19 +203,25 @@
             <div class="work">
                 <div class="internship work-type">
                     <h2>Internships</h2>
-                    <button class="btn btn-primary" data-toggle="modal" data-target="#InternshipModal">Front End Engineering</button>
+                    <div class="internship-work-options work-options animated fadeIn">
+
+                            <button class="btn btn-primary internship-btn" data-toggle="modal" data-target="#InternshipModal">Front End Engineering</button>
+                    </div>
+                    
                 </div>
                 <div class="projects work-type">
                     <h2>Projects</h2>
-                    <button class="btn btn-primary" data-toggle="modal" data-target="#WebProjectModal">Web Development</button>
-                    <button class="btn btn-primary" data-toggle="modal" data-target="#DataScienceProjectModal">Data Science notebooks</button>
-                    <button class="btn btn-primary" data-toggle="modal" data-target="#AIProjectModal">Artificial Intelligence</button>
+                    <div class="project-work-options work-options animated fadeIn">
+                            <button class="btn btn-primary project-btn" data-toggle="modal" data-target="#WebProjectModal">Web Development</button>
+                            <button class="btn btn-primary project-btn" data-toggle="modal" data-target="#DataScienceProjectModal">Data Science notebooks</button>
+                            <button class="btn btn-primary project-btn" data-toggle="modal" data-target="#AIProjectModal">Artificial Intelligence</button>
+                    </div>
                 </div>
             </div>
         </div>
         <!-- Internship Modal -->
         <div class="modal fade" id="InternshipModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
                         <h5 class="modal-title" id="exampleModalLongTitle">Front End Engineering Internship</h5>
@@ -251,7 +257,7 @@
 
         <!-- Web Modal -->
         <div class="modal fade" id="WebProjectModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
                         <h5 class="modal-title" id="exampleModalLongTitle">Web Development Projects</h5>
@@ -361,7 +367,7 @@
         <!-- dataScience Modal -->
         <div class="modal fade" id="DataScienceProjectModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
             aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
                         <h5 class="modal-title" id="exampleModalLongTitle">Data Science Notebooks</h5>
@@ -385,7 +391,7 @@
 
         <!--AI Modal -->
         <div class="modal fade" id="AIProjectModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
                         <h5 class="modal-title" id="exampleModalLongTitle">AI Projects</h5>
@@ -408,7 +414,7 @@
     </section>
 
     <section class='about-section' id="work-section">
-        <div class="container">
+        <div class="container section">
             <div class="heading">
                 <h3 class="section-heading">
                     About Me
@@ -444,7 +450,7 @@
                         </table>
                     </div>
                 </div>
-                <div class="row">
+                <div class="row about-content">
                     <p>Hi I am Ankit Gupta and I love to develop cool applications. I am constantly learning to develop smart applications using artificial intelligence because <strong>Artificial Intelligence</strong> is the current <strong>Big Thing</strong>. Another reason for getting into Artificial Intelligence is that this field merges my two favourite subjects i.e Computer Science and Mathematics.</p>
 
                     <p>I started my journey as a developer by trying out everything I could. I went for Android Workshops, Hacking workshops, robotics workshop and many more. But after trying all those things I started out with designing <strong>Front End</strong> for web applications. Soon I realised that I need to learn more because I can't get the data from my users. This drove me to learn <strong>Back-End</strong>. After that I started noticing that there are things like e-commerce sites which know what we like what we don't like and shows products based on that. I wondered how they did that and started researching, which ultimately led me to <strong>Artificial Intelligence and Machine Learning</strong>. Then I started thinking how Google show the best results so accurately and how it made "Google ASsistant" and wanted to make my own cool personal digital assistant like "Jarvis". This curiosity led me to <strong>Natural Language Processing and Deep Learning</strong>. I also wondered why some businesses fail and why some succeed and constantly try to find the answers to these question. One of the answers I found was the abundance of data but it is very hard to make sense of this data, this led me to find a new friend that is, <strong>Data Science</strong>.</p>
@@ -453,8 +459,8 @@
         </div>
     </section>
 
-    <footer>
-        <div class="container">
+    <footer class="contact-section">
+        <div class="container section">
             <div class="heading">
                 <h3 class="section-heading">
                     Contact ME
@@ -462,22 +468,22 @@
             </div>
 
             <div class="row">
-                <div class="col-md-4">
+                <div class="col-md-5">
                     <ul class="contact-options">
                         <li>
-                            <i class="fas fa-envelope"></i> ankit.gupta.cs1511@gmail.com
+                            <i class="fas fa-envelope icon fa-3x"></i> ankit.gupta.cs1511@gmail.com 
                         </li>
                         <li>
-                            <a href="https://www.linkedin.com/in/ankit-gupta-565093115/" target='_blank'> <i class="fab fa-linkedin"></i> Connect with me on LinkedIn</a>
+                            <a href="https://www.linkedin.com/in/ankit-gupta-565093115/" target='_blank'> <i class="fab fa-linkedin icon fa-3x"></i>   Connect with me on LinkedIn</a>
                         </li>
                     </ul>
                 </div>
                 <div class="col-md-6">
                     Or post the query Here
-                    <form>
+                    <form action="https://chat-web-app-ankit.herokuapp.com/chat/submit/query" method="post">
                             <div class="form-group">
                               <label for="exampleInputEmail1">Email address</label>
-                              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                              <input type="email" name="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" required>
                               <small id="emailHelp" class="form-text text-muted">I'll never share your email with anyone else.</small>
                             </div>
                             

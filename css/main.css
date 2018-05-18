@@ -169,9 +169,27 @@ background-color:transparent!important;
     
 }
 
+.heading{
+    padding: 20px;
+    text-align:center;
+}
+
+.section-heading{
+    font-size: 4rem;
+    font-weight: bolder;
+}
+
+.skill-section{
+    padding: 20px 0;
+    text-align: center;
+}
+
+.skill-section .row{
+    text-align:center;
+}
 
 .card{
-    margin: 10px;
+    margin: 10px 20px;
 }
 
 .skill-logo{
@@ -180,3 +198,120 @@ background-color:transparent!important;
     margin: 10px;
 }
 
+.card-text{
+    font-size: 2rem;
+    font-weight: bold;
+    color: #555555;
+}
+
+.section{
+    border-bottom: 1px solid #999;
+    padding: 20px 0  100px 0;
+}
+
+.work{
+    /* padding: 20px; */
+    box-shadow: 2px 2px 2px #999;
+    text-align:center;
+    
+  background: #3494e6; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #3494e6, #ec6ead); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #3494e6, #ec6ead); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.pink{
+    background: none;
+    background-color: #ec6ead;
+}
+
+.blue{
+    background:none;
+    background-color: #3494e6;
+}
+.work-type{
+    display:inline-block;
+    width: 45%;
+    height: 300px;
+    padding: 40px 0;
+    position: relative;
+    color: white;
+}
+
+.work-type h2{
+    color: white;
+    margin-top: 80px;
+    font-size: 3rem;
+}
+
+.work-options{
+    display: none;
+    position:absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    text-align: center;
+    z-index: 20;
+}
+
+
+
+.internship:hover .internship-work-options{
+    background-color: #3494e6;
+    display:block;
+    width: 100%;
+}
+
+.projects:hover .project-work-options{
+    background-color: #ec6ead;
+    display:block;
+    width: 100%;
+}
+
+.work-options button{
+    display: block;
+    margin: 20px auto;
+    width: 200px;
+}
+
+.internship-btn
+{
+    background-color: #712680;
+}
+
+.project-btn{
+    background-color:#770000;
+}
+
+.about-content{
+    margin: 40px 0;
+}
+
+.contact-section{
+    color: white;
+    background: #000000;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to left, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to left, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+}
+
+.contact-section .section{
+    padding: 20px 0 ;
+}
+
+.contact-options{
+    list-style-type: none;
+
+}
+
+.contact-options li{
+    font-size: 20px;
+    margin: 10px;
+    padding: 10px;
+}
+
+.contact-options .icon{
+    vertical-align: middle;
+    margin-right: 10px;
+}

@@ -13,7 +13,7 @@ $(document).ready(function(){
         var p = document.createElement('p');
         var responseImage = document.createElement('img');
 
-        responseImage.src = "images/my-chat.jpg";
+        responseImage.src = "images/my-chat1.jpg";
         responseImage.className = "chat-image";
 
         responseContainer.className = "chat-msg-container response-container";
@@ -28,7 +28,7 @@ $(document).ready(function(){
         var pInput = document.createElement('p');
         var inputImage = document.createElement('img');
 
-        inputImage.src = "images/my-chat1.jpg";
+        inputImage.src = "images/user.png";
         inputImage.className = "chat-image";
 
         inputContainer.className = "chat-msg-container input-container";
@@ -63,4 +63,33 @@ $(document).ready(function(){
 
      
     });
+
+
+    /*
+        Hover options configurations
+    */
+
+    // $(".internship").hover(function(){
+    //     $(".work").removeClass("pink").addClass("blue");
+    //     $(".work h2").hide();
+    //     $(".projects").hide();
+    // });
+
+    // $(".projects").hover(function(){
+    //     $(".work").addClass("pink").removeClass("blue");
+    //     $(".work h2").hide();
+    //     $(".internship").hide();
+    // });
+
+    // $(".internship").mouseout(function(){
+    //     $(".work").removeClass("pink").removeClass("blue");
+    //     $(".work h2").show();
+    //     $(".projects").show();
+    // });
+
+    // $(".projects").mouseout(function(){
+    //     $(".work").removeClass("pink").removeClass("blue");
+    //     $(".work h2").show();
+    //     $(".internship").show();
+    // });
 });
