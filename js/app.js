@@ -9,13 +9,16 @@ $(document).ready(function(){
             "msg": input
         };
 
-        $.ajaxSetup({
+        var url ="https://chat-web-app-ankit.herokuapp.com/chat/get/response";
+
+        $.ajax({
+            type: "POST",
+            url: url,
+            data: data,
             headers: {
-                'Content-Type': 'application/json',
-                'Access-Control-Allow-Origin': 'https://ankit-gupta-1511.github.io',
-                'Accept': 'application/json'
+                'Access-Control-Allow-Origin': 'https://ankit-gupta-1511.github.io'
             }
-        });
+          });
 
         $.post("https://chat-web-app-ankit.herokuapp.com/chat/get/response", data).done(function(response){
             responseContainer.textContent = response;
