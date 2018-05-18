@@ -15,7 +15,7 @@
 
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <nav class="navbar navbar-expand-lg ">
             <a class="navbar-brand" href="#">AnkitGupta</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                 aria-expanded="false" aria-label="Toggle navigation">
@@ -47,18 +47,20 @@
     </header>
 
     <div class="container-fluid hero">
-        <!-- <img src="/images/jarvis.jpg" alt="" class="hero-image"> -->
-        <div class="chatbot">
-            <div class="chat-screen">
-                <div class="response-container">
-                    <p class="response"></p>
-                </div>
-            </div>
-            <div class="chat-input">
-                <textarea name="chat-input" id="chat-input" cols="30" rows="10" placeholder="please type here"></textarea>
-                <button class="btn btn-primary" id='chat-btn'>Send</button>
-            </div>
+        <div class="container">
+                <div class="chatbot">
+                        <div class="chat-screen">
+                            <div class="response-container">
+                                <p class="response"></p>
+                            </div>
+                        </div>
+                        <div class="chat-input-box">
+                            <textarea name="chat-input" id="chat-input" cols="30" rows="10" placeholder="please type here" class="chat-input"></textarea>
+                            <button class="btn btn-primary btn-chat" id='chat-btn'>Send</button>
+                        </div>
+                    </div>
         </div>
+        
     </div>
     <section class="skill-section container" id="skill-section">
         <div class="heading">

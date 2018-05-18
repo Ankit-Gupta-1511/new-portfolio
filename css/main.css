@@ -1,7 +1,6 @@
 html, body{
 width: 100%;
 height: 100%;
-position: relative;
 }
 img{
     width: 100%;
@@ -11,12 +10,72 @@ header{
 position: absolute;
 top:0;
 width:100%;
+background: transparent;
+z-index:20;
 }
 
+.navbar{
+background-color:transparent!important;
+}
+
+.navbar-brand {
+    color: white;
+}
+.navbar-nav .nav-link {
+    color: white;
+}
+
+.navbar-toggler{
+    color: white;
+}
 .hero{
     width: 100%;
     background-image: url("../images/jarvis.jpg");
+    padding-top: 60px;
+    padding-bottom: 30px;
 }
+
+.chatbot{
+    min-height: 450px;
+    max-width: 300px;
+    background-color:white;
+    border-radius: 20px;
+    position: relative;
+    
+}
+
+.chat-screen{
+ min-height: 300px;
+}
+
+.chat-input-box{
+    position: absolute;
+    bottom:10px;
+}
+
+.chat-input{
+    max-height:50px;
+    max-width: 70%;
+    display:inline-block;
+    vertical-align: middle;
+    margin: 10px 5px 10px 10px;
+    background: white;
+    border: 1px solid #666;
+    border-radius: 20px;
+    
+}
+.btn-chat{
+    height:50px;
+    width: 50px;
+    border-radius: 50%;
+    text-align: center;
+    padding:0;
+    margin-right: 10px;
+    display:inline-block;
+    vertical-align: middle;
+    
+}
+
 
 .card{
     margin: 10px;

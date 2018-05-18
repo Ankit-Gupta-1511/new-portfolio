@@ -22,9 +22,9 @@ $(document).ready(function(){
             responseContainer.textContent = response;
           });
 
-        // $.post("https://chat-web-app-ankit.herokuapp.com/chat/get/response", data).done(function(response){
-        //     responseContainer.textContent = response;
-        // });
+        $.post("https://chat-web-app-ankit.herokuapp.com/chat/get/response", data).done(function(response){
+            responseContainer.textContent = response;
+        });
 
      
     });
