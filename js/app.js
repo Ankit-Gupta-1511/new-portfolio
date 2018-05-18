@@ -12,7 +12,7 @@ $(document).ready(function(){
         $.ajaxSetup({
             headers: {
                 'Content-Type': 'application/json',
-                'Access-Control-Allow-Origin': '*',
+                'Access-Control-Allow-Origin': 'https://ankit-gupta-1511.github.io',
                 'Accept': 'application/json'
             }
         });
