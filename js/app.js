@@ -17,7 +17,7 @@ $(document).ready(function(){
 
             url: "https://chat-web-app-ankit.herokuapp.com/chat/get/response",
             data: data,
-            type: 'POST',
+            method: 'POST',
             crossDomain: true,
             dataType: 'jsonp',
             success: function(data) { 
