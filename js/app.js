@@ -11,19 +11,9 @@ $(document).ready(function(){
 
         var url ="https://chat-web-app-ankit.herokuapp.com/chat/get/response";
 
-        $.ajax({
-            type: "POST",
-            url: url,
-            data: data,
-            headers: {
-                'Access-Control-Allow-Origin': 'https://ankit-gupta-1511.github.io'
-            }
-          }).done(function(response){
-            responseContainer.textContent = response;
-          });
-
+        
         $.post("https://chat-web-app-ankit.herokuapp.com/chat/get/response", data).done(function(response){
-            responseContainer.textContent = response;
+            responseContainer.textContent = response.response;
         });
 
      

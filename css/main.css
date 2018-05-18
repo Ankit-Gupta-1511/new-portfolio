@@ -36,37 +36,41 @@ background-color:transparent!important;
 }
 
 .chatbot{
-    min-height: 450px;
-    max-width: 300px;
+    max-height: 600px;
+    height:600px;
+    max-width: 500px;
     background-color:white;
-    border-radius: 20px;
     position: relative;
     
 }
 
 .chat-screen{
- min-height: 300px;
+ min-height: 4500px;
 }
 
 .chat-input-box{
     position: absolute;
     bottom:10px;
+    left:0;
+    right: 0;
 }
 
 .chat-input{
-    max-height:50px;
-    max-width: 70%;
+    max-height:80px;
+    max-width: 90%;
+    width:80%;
     display:inline-block;
     vertical-align: middle;
     margin: 10px 5px 10px 10px;
     background: white;
     border: 1px solid #666;
     border-radius: 20px;
+    padding:10px;
     
 }
 .btn-chat{
-    height:50px;
-    width: 50px;
+    height:70px;
+    width: 70px;
     border-radius: 50%;
     text-align: center;
     padding:0;
