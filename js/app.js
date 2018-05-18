@@ -9,22 +9,18 @@ $(document).ready(function(){
             "msg": input
         };
 
-        // $.post("https://chat-web-app-ankit.herokuapp.com/chat/get/response", data).done(function(response){
-        //     responseContainer.textContent = response;
-        // });
-
-        $.ajax({
-
-            url: "https://chat-web-app-ankit.herokuapp.com/chat/get/response",
-            data: data,
-            method: 'POST',
-            crossDomain: true,
-            dataType: 'jsonp',
-            success: function(data) { 
-                console.log(data);
-                responseContainer.textContent = data;
-             },
-            error: function() { alert('Failed!'); },
+        $.ajaxSetup({
+            headers: {
+                'Content-Type': 'application/json',
+                'Access-Control-Allow-Origin': '*',
+                'Accept': 'application/json'
+            }
         });
+
+        $.post("https://chat-web-app-ankit.herokuapp.com/chat/get/response", data).done(function(response){
+            responseContainer.textContent = response;
+        });
+
+     
     });
 });
