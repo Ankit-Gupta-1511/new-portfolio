@@ -59,11 +59,36 @@ $(document).ready(function(){
             responseChatBox.appendChild(responseImage);
             responseChatBox.appendChild(responseContainer);
             chatScreen.appendChild(responseChatBox);
+
+            $.post("https://chat-web-app-ankit.herokuapp.com/chat/send/input", {'msg': input}).done(function(res){
+                console.log(res)
+                var id = res.data.id;
+                console.log("id is "+ id);
+                $.post("https://chat-web-app-ankit.herokuapp.com/chat/send/response", {'response': response.response, 'input_msg': id}).done(function(){
+                    console.log("response logged");
+                });
+            })
         });
 
      
     });
 
+
+    // query form submit 
+
+    $("#query-form").submit(function(evt){
+        evt.preventDefault();
+        var url = $(this).attr("action");
+        var method = $(this).attr("method");
+        var data = {
+           email: $("#query-email").val(),
+           query: $("#query").val()
+        };
+
+        $.post(url, data).done(function(res){
+            alert(res.msg);
+        });
+    });
 
     /*
         Hover options configurations
