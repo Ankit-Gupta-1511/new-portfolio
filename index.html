@@ -16,7 +16,7 @@
 <body>
     <header>
         <nav class="navbar navbar-expand-lg ">
-            <a class="navbar-brand" href="#">AnkitGupta</a>
+            <a class="navbar-brand" href="/">AnkitGupta</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                 aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -64,7 +64,7 @@
                 </div>
                 
             </div>
-                <div class="chatbot">
+                <div class="chatbot" id="chatbot">
                         <div class="chat-screen" id="chat-screen">
                             <div class="chat-box">
                                     <img src="images/my-chat1.jpg" alt="" class="chat-image">
@@ -76,8 +76,8 @@
                              
                         </div>
                         <div class="chat-input-box">
-                            <textarea name="chat-input" id="chat-input" cols="30" rows="10" placeholder="please type here" class="chat-input"></textarea>
-                            <button class="btn btn-primary btn-chat" id='chat-btn'>Send</button>
+                            <textarea name="chat-input" id="chat-input" cols="30" rows="10" placeholder="Please type here..." class="chat-input"></textarea>
+                            <button class="btn btn-primary btn-chat" id='chat-btn'><i class="fas fa-location-arrow chat-send-icon"></i></button>
                         </div>
                     </div>
         </div>
@@ -261,13 +261,16 @@
                 <div class="modal-content">
                     <div class="modal-header">
                         <h5 class="modal-title" id="exampleModalLongTitle">Web Development Projects</h5>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <button type="button" class="close project-btn-close" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                         </button>
+                        <button class="navbar-toggler d-md-none d-lg-none" type="button" data-toggle="collapse" data-target="#web-projects" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon project-toggler"></span>
+                          </button>
                     </div>
                     <div class="modal-body">
                             <div class="row">
-                                    <div class="col-4">
+                                    <div class="col-md-4 col-sm-12 collapse navbar-collapse project-list" id="web-projects">
                                       <div class="list-group" id="list-tab" role="tablist">
                                         <a class="list-group-item list-group-item-action active" id="list-portfolio-list" data-toggle="list" href="#list-portfolio" role="tab" aria-controls="portfolio">MyPortFolio</a>
                                         <a class="list-group-item list-group-item-action" id="list-blog-list" data-toggle="list" href="#list-blog" role="tab" aria-controls="blog">TechBlog</a>
@@ -275,14 +278,14 @@
                                         <a class="list-group-item list-group-item-action" id="list-redcarpet-list" data-toggle="list" href="#list-redcarpet" role="tab" aria-controls="redcarpet">RedCarpetUp</a>
                                       </div>
                                     </div>
-                                    <div class="col-8">
+                                    <div class="col-md-8 col-sm-12">
                                       <div class="tab-content" id="nav-tabContent">
                                         <div class="tab-pane fade show active" id="list-portfolio" role="tabpanel" aria-labelledby="list-portfolio-list">
                                             <h4>My PortFolio Site</h4>
                                             <table class="table table-responsive">
                                                 <tr>
                                                     <td>Link</td>
-                                                    <td>Currently not available</td>
+                                                    <td><a href="https://ankit-gupta-1511.github.io/new-portfolio/">https://ankit-gupta-1511.github.io/new-portfolio/</a></td>
                                                 </tr>
                                                 <tr>
                                                     <td>Github Link</td>
@@ -316,7 +319,7 @@
                                                 This site was developed with the help of my friends primarily to share the knowledge that I and my friends have with the world.
                                         </div>
                                         <div class="tab-pane fade" id="list-fashvolt" role="tabpanel" aria-labelledby="list-fashvolt-list">
-                                                <h4>My PortFolio Site</h4>
+                                                <h4>Fashvolts</h4>
                                                 <table class="table table-responsive">
                                                     <tr>
                                                         <td>Link</td>
@@ -335,7 +338,7 @@
                                                 This was an e-commerce site developed in collaboration with a friend for a group of young entrepreneurs.
                                         </div>
                                         <div class="tab-pane fade" id="list-redcarpet" role="tabpanel" aria-labelledby="list-redcarpet-list">
-                                                <h4>My PortFolio Site</h4>
+                                                <h4>RedCarpetUp</h4>
                                                 <table class="table table-responsive">
                                                     <tr>
                                                         <td>Link</td>
@@ -401,7 +404,7 @@
                     </div>
                     <div class="modal-body">
                             <h4>ChatBot</h4>
-                            <a href="" class="btn btn-primary">See It Live in action</a>
+                            <a href="#chatbot" class="btn btn-primary">See It Live in action</a>
                             <a href="https://github.com/Ankit-Gupta-1511/my-chatbot" class="btn btn-primary" target="_blank">Click Here for the code</a>
                     </div>
                     <div class="modal-footer">
@@ -479,7 +482,7 @@
                     </ul>
                 </div>
                 <div class="col-md-6">
-                    Or post the query Here
+                    Or post the query Here <br> <br>
                     <form action="https://chat-web-app-ankit.herokuapp.com/chat/submit/query" method="post">
                             <div class="form-group">
                               <label for="exampleInputEmail1">Email address</label>
